@@ -1,4 +1,4 @@
-# NFT Preview Card
+# Order Summary Card
 
 Hi, devs!
 
@@ -22,8 +22,8 @@ Desktop
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/manuelscl/nft-card)
-- Live Site URL: [Add live site URL here](https://manuelscl.github.io/nft-card)
+- Solution URL: https://github.com/manuelscl/order-summary
+- Live Site URL: https://manuelscl.github.io/order-summary
 
 ## My process
 
