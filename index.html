@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
   <title>Order summary card</title>
 
   <style>
@@ -13,6 +16,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: 'Red Hat Display', sans-serif;
     }
     body {
         display: flex;
@@ -24,7 +28,7 @@
     .order-summary-card {
         width: 320px;
         background: white;
-        border-radius: 12px;
+        border-radius: 14px;
         overflow: hidden;
     }
     .order-hero-img {
@@ -34,7 +38,8 @@
         padding: 25px 25px;
     }
     .order-title {
-        font-size: 24px;
+        font-size: 22px;
+        font-weight: 900;
         color: hsl(223, 47%, 23%);
         text-align: center;
         margin-bottom: 15px;
@@ -47,25 +52,55 @@
     }
     .annual-plan {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 20px;
-        padding: 20px 0;
+        gap: 10px;
+        background: hsl(225, 100%, 98%);
+        border-radius: 10px;
+        padding: 18px;
+    }
+    .annual-price p {
+        font-size: 15px;
+    }
+    .annual-price p:nth-child(1) {
+        font-weight: 900;
+        color: hsl(223, 47%, 23%);
+        margin-bottom: 4px;
+    }
+    .annual-price p:nth-child(2) {
+        color: hsl(224, 23%, 55%);
+    }
+    .annual-plan a {
+        font-size: 14px;
+        font-weight: 900;
+        color: hsl(245, 75%, 52%);
+        margin-left: 15px;
     }
     .order-btns {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
     .order-btns a {
         width: 100%;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 14px;
         text-align: center;
         text-decoration: none;
+        border-radius: 10px;
+        transition: 0.3s ease;
     }
     .order-btns a:nth-child(1) {
         color: white;
         background: hsl(245, 75%, 52%);
+        box-shadow: 0 10px 10px 6px hsla(245, 75%, 52%, 0.150);
+    }
+    .order-btns a:hover:nth-child(1) {
+        box-shadow: 0 10px 12px 10px hsla(245, 75%, 52%, 0.150);
     }
     .order-btns a:nth-child(2) {
-        color: hsl(223, 47%, 23%);
+        color: hsl(224, 23%, 55%);
     }
   </style>
 </head>
@@ -73,7 +108,7 @@
     <main>
         <section class="container">
             <div class="order-summary-card">
-                <img class="order-hero-img" src="./images/illustration-hero.svg" alt="">
+                <img class="order-hero-img" src="./images/illustration-hero.svg" alt="flat illustration">
                 <div class="order-summary-content">
                     <h1 class="order-title">Order Summary</h1>
                     <p class="order-description">
