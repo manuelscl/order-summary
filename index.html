@@ -26,7 +26,7 @@
         background: hsl(225, 100%, 94%);
     }
     .order-summary-card {
-        width: 320px;
+        max-width: 340px;
         background: white;
         border-radius: 14px;
         overflow: hidden;
@@ -58,6 +58,7 @@
         background: hsl(225, 100%, 98%);
         border-radius: 10px;
         padding: 18px;
+        margin: 22px 0;
     }
     .annual-price p {
         font-size: 15px;
@@ -75,6 +76,10 @@
         font-weight: 900;
         color: hsl(245, 75%, 52%);
         margin-left: 15px;
+        transition: 0.3s ease;
+    }
+    .annual-plan a:hover {
+        color: #766CF1;
     }
     .order-btns {
         display: flex;
@@ -97,10 +102,14 @@
         box-shadow: 0 10px 10px 6px hsla(245, 75%, 52%, 0.150);
     }
     .order-btns a:hover:nth-child(1) {
-        box-shadow: 0 10px 12px 10px hsla(245, 75%, 52%, 0.150);
+        background: #766CF1;
+        box-shadow: 0 10px 12px 8px hsla(245, 75%, 52%, 0.160);
     }
     .order-btns a:nth-child(2) {
         color: hsl(224, 23%, 55%);
+    }
+    .order-btns a:hover:nth-child(2) {
+        color: hsl(223, 47%, 23%);
     }
   </style>
 </head>
