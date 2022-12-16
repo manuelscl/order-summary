@@ -23,7 +23,9 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background: hsl(225, 100%, 94%);
+        background-color: hsl(225, 100%, 94%);
+        background-image: url('./images/pattern-background-mobile.svg');
+        background-repeat: repeat-x;
     }
     .order-summary-card {
         max-width: 340px;
@@ -58,7 +60,7 @@
         background: hsl(225, 100%, 98%);
         border-radius: 10px;
         padding: 18px;
-        margin: 22px 0;
+        margin: 24px 0;
     }
     .annual-price p {
         font-size: 15px;
@@ -80,6 +82,7 @@
     }
     .annual-plan a:hover {
         color: #766CF1;
+        text-decoration: none;
     }
     .order-btns {
         display: flex;
@@ -110,6 +113,31 @@
     }
     .order-btns a:hover:nth-child(2) {
         color: hsl(223, 47%, 23%);
+    }
+
+    @media (min-width: 700px) {
+        body {
+            background-image: url('./images/pattern-background-desktop.svg');
+            background-repeat: no-repeat;
+            background-position: top;
+        }
+        .order-summary-card {
+            max-width: 400px;
+        }
+        .order-summary-content {
+            padding: 35px 35px 20px;
+        }
+        .order-description {
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .annual-plan {
+            justify-content: space-evenly;
+            gap: 25px;
+        }
+        .annual-plan a {
+            margin-left: 35px;
+        }
     }
   </style>
 </head>
